@@ -1,0 +1,9 @@
+[package]
+name = "biblionotes"
+version = "0.1.0"
+authors = ["Jean Maillard <jean@maillard.it>"]
+
+[dependencies]
+bib-parser = { git = "https://github.com/jeanm/bib-parser.git" }
+handlebars = { version = "0.24", features = ["serde_type"] }
+pandoc = "0.5.1"
