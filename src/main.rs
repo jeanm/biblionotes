@@ -42,11 +42,11 @@ fn make_index(index: Vec<(String, String, String, String)>) -> String {
         fmt::write(
             &mut content,
             format_args!(
-                "  <li>{} ({}) <a href=\"{}\">{}</a>\n",
-                author,
-                year,
+                "  <li><a href=\"{}\">{}</a><br>\n  {} ({})\n",
                 link,
                 title,
+                author,
+                year,
             )
         ).unwrap();
     }
